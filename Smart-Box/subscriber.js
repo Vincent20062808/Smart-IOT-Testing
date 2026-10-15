@@ -2,8 +2,7 @@ const mqtt = require("mqtt");
 
 const BROKER_URL = "mqtt://broker.hivemq.com";
 
-const TOPIC = "Smart-box/Smart-box/package/data"; 
-
+const TOPIC = "smart-box/package/data";
 const client = mqtt.connect(BROKER_URL, {
   connectTimeout: 10_000,
   reconnectPeriod: 2_000,
